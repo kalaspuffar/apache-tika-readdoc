@@ -29,7 +29,7 @@ public class FileEmbeddedDocumentExtractor implements EmbeddedDocumentExtractor 
     private static Detector detector;
 
     public FileEmbeddedDocumentExtractor(Detector detector) {
-        this.detector = detector;
+        FileEmbeddedDocumentExtractor.detector = detector;
     }
 
     public boolean shouldParseEmbedded(Metadata metadata) {
